@@ -2,8 +2,20 @@ package pers.yangx.stdesignpattern;
 
 import org.junit.Test;
 
-import java.util.Random;
+import java.math.BigInteger;
+import java.util.*;
 
+class ABC{
+    private Long id;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+}
 public class Main {
 
     public static void main(String[] args) {
@@ -19,8 +31,13 @@ public class Main {
 
     @Test
     public void ss(){
-        Long s = new Long(2000);
-        Long ss = s/(5*6);
-        System.out.println(ss);
+        Map temp = new HashMap<>();
+        temp.put(1,2);
+        temp.put(3,5);
+        System.out.println(temp.get(2)==null);
+        System.out.println();
+        Double band = 0D;
+        System.out.println(band);
+
     }
 }
